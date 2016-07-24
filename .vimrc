@@ -28,6 +28,8 @@ Plugin 'craigemery/vim-autotag'
 "more color schemes
 Plugin 'flazz/vim-colorschemes'
 " All of your Plugins must be added before the following line
+Plugin 'mattn/calendar-vim'
+Plugin 'vimwiki'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " #################################################################
@@ -39,21 +41,43 @@ filetype plugin indent on    " required
 " ####### COLOURS #################################
 "[colour scheme theme]
 set t_Co=256
-"colorscheme jellybeans
-colorscheme dante
+colorscheme jellybeans
+"colorscheme dante
 " #### BACKGROUND #######                                                    
 "[make background transparent]                              
 "highlight Normal ctermbg=none                                   
 "highlight NonText ctermbg=none 
 "##################################################
-                                                                                                     
 "[Fix colors and background make uniform]                                                            
 if &term =~ '256color'                                                                               
   " disable Background Color Erase (BCE)                                                             
   set t_ut=                                                                                          
 endif                                                                                                
-                                                                                                     
+"###################################################
+"============== VIM KATAs ==========================
+"    harder, better, faster, stronger
+"0.ESC CTRL
+inoremap jk <Esc>
+cnoremap jk <Esc>
+vnoremap jk <Esc>
+"1.disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+cnoremap <Up> <NOP>
+cnoremap <Down> <NOP>
+cnoremap <Left> <NOP>
+cnoremap <Right> <NOP>
+"2.disable h,j,k,l
+"
 "##################################################                                                  
+"leader key for vimwiki
+let mapleader="\<Space>"
 set mouse=a
 set clipboard=unnamed
 "### SPACES & TABS ################################                                                  
