@@ -73,6 +73,10 @@ cnoremap <Up> <NOP>
 cnoremap <Down> <NOP>
 cnoremap <Left> <NOP>
 cnoremap <Right> <NOP>
+vnoremap <Up> <NOP>
+vnoremap <Down> <NOP>
+vnoremap <Left> <NOP>
+vnoremap <Right> <NOP>
 "2.disable h,j,k,l
 "
 "##################################################                                                  
